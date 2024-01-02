@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Yoga Studio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="section">
+			<div class="nav">
+				<div class="nav__logo">
+					<figure>
+						<img class="nav__logo--img" src="/img/logo.svg" alt="logo" />
+					</figure>
+
+					<h1 class="nav__logo--name">Yoga Studio</h1>
+				</div>
+
+				<ul class="nav__list">
+					<a href="#classes" class="nav__item">grafik</a>
+					<a href="#" class="nav__item" target="_blank">rezerwacja</a>
+					<a href="#price" class="nav__item">cennik</a>
+					<a href="#membership" class="nav__item">kontakt</a>
+				</ul>
+			</div>
+
+			<button class="burger-btn">
+				<div class="burger-btn__box">
+					<div class="burger-btn__bars"></div>
+				</div>
+			</button>
+
+			<div class="nav__burger">
+				<div class="burger__list">
+					<a href="#classes" class="burger__item">grafik</a>
+					<a href="#" class="burger__item" target="_blank">rezerwacja</a>
+					<a href="#price" class="burger__item">cennik</a>
+					<a href="#membership" class="burger__item">kontakt</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="welcome section">
+			<div class="welcome__img">
+				<img srcset="/img/welcome2__large.jpg" alt="Kobieta ćwicząca yogę" />
+			</div>
+			<div class="welcome__info">
+				<h1 class="welcome__heading">Wejdź z nami do świata yogi!</h1>
+				<p class="welcome__p">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi
+					facere soluta? Asperiores, laboriosam sint! Laudantium explicabo
+					voluptas, esse vel, neque eum ratione in tempore, hic vitae magnam
+					possimus? Sint optio labore amet libero alias iusto sed ab blanditiis
+					magni expedita itaque quod autem, dolor ipsam delectus saepe
+					repellendus non.
+				</p>
+			</div>
+			<div class="welcome__img">
+				<img src="/img/welcome__large.jpg" alt="Kobieta ćwicząca yogę" />
+			</div>
+		</section>
+
+		<section class="advantage section">
+			<picture class="advantage__img">
+				<source srcset="/img/advantage_small.jpg" media="(max-width: 600px)" />
+				<img
+					srcset="/img/advantage_large.jpg"
+					alt="Kobieta w pozycji powitania słońca"
+				/>
+			</picture>
+
+			<div class="advantage__list">
+				<h1 class="advantage__heading">Korzyści płynące z yogi</h1>
+				<ul>
+					<li class="advantage__item">
+						Pomaga zachować prawidłową postawę ciała
+					</li>
+					<li class="advantage__item">Pozwala budować siłę</li>
+					<li class="advantage__item">Łagodzi objawy bólowe głowy i pleców</li>
+					<li class="advantage__item">Redukuje stres</li>
+					<li class="advantage__item">Wpływa pozytywnie na jakość snu</li>
+					<li class="advantage__item">Poprawia samopoczucie</li>
+				</ul>
+				<a href="#membership" class="advantage__sign">zapisz się już dziś</a>
+			</div>
+		</section>
+
+		<section class="classes section" id="classes">
+			<div class="classes__all">
+				<div class="class">
+					<img
+						class="class__img"
+						src="/img/hatcha_large.jpg"
+						alt="Hatha yoga"
+					/>
+					<p class="class__name">Hatha yoga</p>
+				</div>
+				<div class="class">
+					<img
+						class="class__img"
+						src="/img/ashtanga_large.jpg"
+						alt="Ashtanga yoga"
+					/>
+					<p class="class__name">Ashtanga yoga</p>
+				</div>
+				<div class="class">
+					<img
+						class="class__img"
+						src="/img/vinyasa_large.jpg"
+						alt="Vinyasa yoga"
+					/>
+					<p class="class__name">Vinyasa yoga</p>
+				</div>
+			</div>
+			<p class="class__more">
+				Aktualny grafik oraz rezerwacja zajęć dostępne są na stronie
+				<a href="#" target="_blank">zapisy online</a>.
+			</p>
+			<p class="class__more">
+				Zapisy na zajęcia możliwe są również bezpośrednio w naszym studiu,
+				poprzez <a href="#membership">formularz kontaktowy</a> oraz
+				telefonicznie.
+			</p>
+
+			<a href="#membership" class="class__sign">zapisz się na zajęcia</a>
+		</section>
+
+		<section class="trainer section">
+			<div class="trainer__info">
+				<h1 class="trainer__heading">Nasi instruktorzy</h1>
+				<p class="trainer__p--1">
+					Nasz zespół składa się z osób traktujących jogę jako pasję...
+				</p>
+				<p class="trainer__p--2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+					sint reprehenderit error minus expedita cum eum quia ut asperiores
+					repudiandae, molestiae consequuntur illum sapiente, vitae unde.
+					Explicabo nostrum nihil doloribus.
+				</p>
+				<button class="trainer__moreInfo">Dowiedz się więcej</button>
+			</div>
+			<div class="trainer__img">
+				<img
+					src="/img/instructors_large.jpg"
+					alt="Nasi instruktorzy"
+					class="trainer__img--1"
+				/>
+				<img
+					src="/img/trainer_large.jpg"
+					alt="Mata do jogi"
+					class="trainer__img--2"
+				/>
+			</div>
+		</section>
+
+		<section class="price section" id="price">
+			<div class="price__membership price__1">
+				<div class="price__membership__img">
+					<img src="/img/price_large.jpg" alt="kobiety ćwiczące yogę" />
+				</div>
+				<div class="price__membership__list">
+					<h1 class="price__membership__heading">
+						Karntety na zajęcia grupowe yogi
+					</h1>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">Wejście jednorazowe</p>
+						<p class="price__membership__price">50 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">4 wejścia / 30 dni</p>
+						<p class="price__membership__price">160 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">8 wejść / 30 dni</p>
+						<p class="price__membership__price">280 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">12 wejść / 90 dni</p>
+						<p class="price__membership__price">360 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">24 wejścia / 90 dni</p>
+						<p class="price__membership__price">600 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">24 wejścia / 180 dni</p>
+						<p class="price__membership__price">700 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">48 wejść / 180 dni</p>
+						<p class="price__membership__price">1000 zł</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="price__membership price__2">
+				<div class="price__membership__list">
+					<h1 class="price__membership__heading">
+						Medytacja i spotkania indywidualne
+					</h1>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">Yoga - zajęcia indywidualne</p>
+						<p class="price__membership__price">200 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">
+							Medytacja - zajęcia indywidualne
+						</p>
+						<p class="price__membership__price">200 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">
+							Medytacja grupowa - wejście jednorazowe
+						</p>
+						<p class="price__membership__price">50 zł</p>
+					</div>
+					<div class="price__membership__listItem">
+						<p class="price__membership__name">
+							Medytacja grupowa - 4 wejscia w miesiącu
+						</p>
+						<p class="price__membership__price">140 zł</p>
+					</div>
+				</div>
+				<div class="price__membership__img">
+					<img src="/img/price2_large.jpg" alt="kobiety ćwiczące yogę" />
+				</div>
+			</div>
+
+			<div class="price__membership__discount">
+				<h1 class="price__membership__heading">Zniżki</h1>
+				<p class="price__membership__name">
+					<span class="price__membership__price">10% </span>zniżki dla
+					studentów, emerytów i rencistów.
+				</p>
+				<p class="price__membership__name">
+					Opłata za kartę członkowską wynosi<span
+						class="price__membership__price"
+					>
+						30zł</span
+					>.
+				</p>
+				<p class="price__membership__name">
+					Płatność w naszym studio przed zajęciami<span
+						class="price__membership__price"
+					>
+						gotówką, kartą lub BLIKiem</span
+					>.
+				</p>
+				<p class="price__membership__name">
+					Nie honorujemy kart z programów lojalnościowych.
+				</p>
+			</div>
+		</section>
+
+		<section class="membership section" id="membership">
+			<form class="membership__form" action="" method="post">
+				<h1 class="membership__heading">Napisz do nas</h1>
+				<label for="name"></label>
+				<input type="text" id="name" required placeholder="IMIĘ I NAZWISKO" />
+				<label for="mail"></label>
+				<input type="mail" id="mail" required placeholder="MAIL" />
+				<label for="phone"></label>
+				<input type="text" id="phone" required placeholder="TELEFON" />
+				<label for="subject"></label>
+				<input type="text" id="subject" required placeholder="TYTUŁ" />
+				<label for="message"></label>
+				<textarea
+					name=""
+					id="message"
+					required
+					placeholder="WIADOMOŚĆ"
+				></textarea>
+				<input type="submit" class="membership__btn" value="wyślij" />
+			</form>
+
+			<div class="membership__info">
+				<div class="membership__contact">
+					<h1 class="membership__heading">Informacje kontaktowe</h1>
+					<a href="mailto:kontakt@yoga-studio.com" class="membership__a"
+						>kontakt@yoga-studio.com</a
+					>
+					<a href="tel:000 000 000" class="membership__a">tel. 000 000 000</a>
+				</div>
+				<div class="membership__hours">
+					<h1 class="membership__heading">Godziny otwarcia</h1>
+					<p class="membership__p">
+						Poniedziałek - Czwartek <span>10-20</span>
+					</p>
+					<p class="membership__p">Piątek <span>12-22</span></p>
+					<p class="membership__p">Sobota <span>10-18</span></p>
+					<p class="membership__p">Niedziela <span>zamknięte</span></p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__up">
+				<div class="footer__contact">
+					<div class="footer__logo">
+						<figure>
+							<img class="footer__logo--img" src="/img/logo.svg" alt="logo" />
+						</figure>
+
+						<h1 class="footer__logo--name">Yoga Studio</h1>
+					</div>
+					<div class="footer__address">
+						<p>ul. Piotrkowska 0</p>
+						<p>Łódź 00-000</p>
+						<p><a href="tel:000 000 000">tel. 000 000 000</a></p>
+						<p>
+							<a href="mailto:kontakt@yoga-studio.com"
+								>kontakt@yoga-studio.com</a
+							>
+						</p>
+					</div>
+				</div>
+
+				<div class="footer__social">
+					<a href="https://www.facebook.com" target="_blank"
+						><i class="ti ti-brand-facebook"></i
+					></a>
+					<a href="https://www.instagram.com" target="_blank"
+						><i class="ti ti-brand-instagram"></i
+					></a>
+					<a href="https://www.youtube.com" target="_blank"
+						><i class="ti ti-brand-youtube-filled"></i
+					></a>
+				</div>
+			</div>
+
+			<div class="footer__down">
+				<div class="footer__links">
+					<a href="#classes">grafik</a>
+					<a href="#price">cennik</a>
+					<a href="#membership">kontakt</a>
+					<a href="#" target="_blank">zapisy online</a>
+				</div>
+
+				<div class="footer__logo">
+					<p class="footer__copyright">
+						<span class="footer__year"></span> copyright by
+					</p>
+					<figure>
+						<img class="footer__logo--img" src="/img/logo.svg" alt="logo" />
+					</figure>
+
+					<h1 class="footer__logo--name">Yoga Studio</h1>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

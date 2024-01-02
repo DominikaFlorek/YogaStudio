@@ -1,0 +1,134 @@
+.membership {
+	padding: 20px;
+	background-image: url(/img/backgr_large.jpg);
+	background-size: cover;
+
+	@include flexCenter;
+
+	&__form {
+		@include flexCenter;
+		flex-direction: column;
+		margin: 40px;
+		padding: 20px;
+		width: 40%;
+	}
+
+	&__heading {
+		@include heading;
+		display: flex;
+		margin: 20px;
+	}
+
+	input,
+	textarea {
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 20px;
+		letter-spacing: 2px;
+		border: none;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	textarea {
+		max-width: 100%;
+		min-width: 100%;
+		max-height: 100px;
+		min-height: 100px;
+	}
+
+	label {
+		display: none;
+	}
+
+	&__btn {
+		text-transform: uppercase;
+		font-weight: bold;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $pastel-grey;
+			color: $whitesmoke;
+		}
+	}
+
+	&__info {
+		width: 40%;
+		margin: 40px;
+		padding: 20px;
+		@include flexCenter;
+		flex-direction: column;
+	}
+
+	&__contact {
+		width: 100%;
+		margin-bottom: 20px;
+		@include flexCenter;
+		flex-direction: column;
+	}
+
+	&__hours {
+		width: 100%;
+		@include flexCenter;
+		flex-direction: column;
+	}
+
+	&__a {
+		text-decoration: none;
+		color: $main-color;
+	}
+
+	&__a,
+	&__p {
+		margin-bottom: 20px;
+		font-size: 1.6rem;
+
+		span {
+			font-weight: bold;
+			margin-left: 5px;
+		}
+	}
+}
+
+@media (width < 900px) {
+	.membership {
+		flex-direction: column;
+
+		&__form {
+			width: 80%;
+		}
+
+		&__info {
+			width: 80%;
+			margin: 0;
+		}
+
+		&__heading {
+			margin: 10px;
+		}
+	}
+}
+
+@media (width < 550px) {
+	.membership {
+		padding: 10px;
+		background-image: url(/img/backgr_small.jpg);
+
+		&__form {
+			width: 100%;
+			margin: 20px;
+		}
+
+		&__heading {
+			@include headingMobile;
+		}
+
+		&__a,
+		&__p {
+			margin-bottom: 20px;
+			font-size: 1.4rem;
+		}
+	}
+}

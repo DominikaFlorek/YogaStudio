@@ -1,0 +1,117 @@
+.trainer {
+	height: 80vh;
+	background-image: url(/img/backgr_large.jpg);
+	background-size: cover;
+
+	@include flexCenter;
+
+	&__info {
+		margin: 20px 0 20px 20px;
+		padding: 40px 0px 40px 40px;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: end;
+		font-size: 1.5rem;
+		text-align: right;
+	}
+
+	&__heading {
+		margin-bottom: 30px;
+		@include heading;
+	}
+
+	&__p--1 {
+		margin-bottom: 10px;
+	}
+
+	&__p--2 {
+		margin-bottom: 40px;
+	}
+
+	&__moreInfo {
+		position: relative;
+		border: none;
+		background: none;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: bold;
+		margin-top: 40px;
+		font-size: 2rem;
+
+		@include underline;
+	}
+
+	&__moreInfo,
+	&__moreInfo::before,
+	&__moreInfo::after {
+		transition: 0.5s;
+	}
+
+	&__img {
+		position: relative;
+		width: 50%;
+		height: 100%;
+
+		&--1 {
+			position: absolute;
+			left: 10%;
+			top: 15%;
+			height: 70%;
+			z-index: 1;
+			border: 10px solid $whitesmoke;
+			object-fit: cover;
+			object-position: bottom;
+		}
+		&--2 {
+			position: absolute;
+			height: 80%;
+			width: 60%;
+			right: 10%;
+			top: 10%;
+			object-fit: cover;
+			object-position: bottom;
+		}
+	}
+}
+
+@media (width < 1100px) {
+	.trainer {
+		&__img--1 {
+			display: none;
+		}
+		&__img--2 {
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 80%;
+		}
+	}
+}
+
+@media (width < 600px) {
+	.trainer {
+		padding: 20px;
+		height: 100%;
+		background-image: url(/img/backgr_small.jpg);
+
+		&__info {
+			margin: 10px;
+			padding: 10px;
+			width: 100%;
+			align-items: center;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+
+		&__moreInfo {
+			margin-top: 5px;
+		}
+
+		&__img {
+			display: none;
+		}
+	}
+}

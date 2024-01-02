@@ -1,0 +1,25 @@
+$main-color: black;
+$whitesmoke: whitesmoke;
+$light-background: rgb(219, 219, 199);
+$faded-pink: #d5cbcc;
+$pastel-grey: #777;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1800px;
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	// font-family: 'Kalam', cursive;
+	scroll-behavior: smooth;
+}

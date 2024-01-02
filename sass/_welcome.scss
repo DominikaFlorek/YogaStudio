@@ -1,0 +1,81 @@
+.welcome {
+	@include flexCenter;
+
+	height: 100vh;
+	background-color: $whitesmoke;
+
+	&__info {
+		@include flexCenter;
+		flex-direction: column;
+		margin: 0 10px;
+		padding: 30px;
+		text-align: center;
+		height: 80%;
+		width: 30%;
+		border: 3px solid $faded-pink;
+	}
+
+	&__heading {
+		margin-bottom: 30px;
+		@include heading;
+	}
+
+	&__p {
+		padding: 15px;
+		font-size: 2rem;
+		font-family: 'Great Vibes', cursive;
+	}
+
+	&__img {
+		@include flexCenter;
+		height: 90%;
+		margin: 20px;
+
+		img {
+			padding: 15px;
+			height: 70%;
+			border: 3px solid $faded-pink;
+		}
+	}
+}
+
+@media (width < 1200px) {
+	.welcome {
+		height: 90vh;
+
+		&__info {
+			width: 70%;
+			padding: 15px;
+		}
+
+		&__img {
+			img {
+				display: none;
+			}
+		}
+
+		&__heading {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (width < 550px) {
+	.welcome {
+		padding: 10px;
+		height: 70%;
+		&__info {
+			width: 100%;
+			padding: 5px;
+			border: none;
+		}
+
+		&__heading {
+			@include headingMobile;
+		}
+
+		&__p {
+			font-size: 1.8rem;
+		}
+	}
+}

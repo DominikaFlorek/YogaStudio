@@ -1,0 +1,176 @@
+.footer {
+	padding: 20px;
+	background-color: $pastel-grey;
+	color: $whitesmoke;
+	text-transform: uppercase;
+	@include flexCenter;
+	flex-direction: column;
+	font-size: 1.3rem;
+
+	&__up {
+		padding: 20px;
+		margin: 20px 0;
+		width: 100%;
+		@include flexCenter;
+	}
+
+	&__contact {
+		width: 60%;
+		@include flexCenter;
+	}
+
+	&__logo {
+		@include flexCenter;
+		padding: 20px;
+
+		&--img {
+			height: 100%;
+			margin-right: 10px;
+		}
+
+		&--name {
+			letter-spacing: 10px;
+		}
+	}
+
+	&__address {
+		padding: 20px;
+
+		p {
+			padding: 5px 0;
+
+			a {
+				text-decoration: none;
+				color: $whitesmoke;
+
+				&:link,
+				&:focus,
+				&:visited {
+					color: $whitesmoke;
+				}
+			}
+		}
+	}
+
+	&__social {
+		width: 40%;
+		text-align: center;
+		font-size: 3.5rem;
+
+		a {
+			padding: 5px;
+			margin: 10px;
+			text-decoration: none;
+
+			&:link,
+			&:focus,
+			&:visited {
+				color: $whitesmoke;
+			}
+		}
+	}
+
+	&__down {
+		width: 90%;
+		padding: 20px;
+		@include flexCenter;
+		flex-direction: column;
+		border-top: 3px solid $whitesmoke;
+	}
+
+	&__links {
+		padding: 20px;
+		margin: 20px;
+		width: 100%;
+		text-align: center;
+
+		a {
+			padding: 5px;
+			margin: 20px;
+			text-decoration: none;
+			letter-spacing: 3px;
+			transition: 1s;
+
+			&:link,
+			&:focus,
+			&:visited {
+				color: $whitesmoke;
+			}
+		}
+	}
+
+	&__copyright {
+		margin-right: 5px;
+	}
+
+	&__year {
+		font-weight: bold;
+	}
+}
+
+@media (width < 900px) {
+	.footer {
+		padding: 10px;
+		font-size: 1.2rem;
+
+		&__up,
+		&__down,
+		&__logo,
+		&__adress {
+			padding: 10px;
+		}
+
+		&__social {
+			width: 30%;
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (width < 750px) {
+	.footer {
+		&__up {
+			flex-direction: column;
+		}
+
+		&__social {
+			width: 100%;
+			padding: 20px;
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+
+			a {
+				margin: 10px;
+			}
+		}
+	}
+}
+
+@media (width < 600px) {
+	.footer {
+		&__up {
+			flex-direction: column;
+		}
+
+		&__contact {
+			text-align: center;
+			flex-direction: column;
+		}
+
+		&__logo {
+			flex-direction: column;
+
+			&--name {
+				margin-top: 10px;
+				text-align: center;
+			}
+
+			&--img {
+				margin: 10px 0;
+			}
+		}
+	}
+}

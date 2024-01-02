@@ -1,0 +1,109 @@
+.classes {
+	@include flexCenter;
+	padding: 40px;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 95%;
+	background-color: whitesmoke;
+
+	&__all {
+		@include flexCenter;
+		flex-direction: row;
+		margin: 40px;
+		margin-bottom: 60px;
+	}
+}
+
+.class {
+	max-width: 30%;
+
+	&:first-child {
+		margin-left: 20px;
+	}
+
+	&:last-child {
+		margin-right: 20px;
+	}
+
+	&__img {
+		padding: 20px;
+		width: 90%;
+		border: 3px solid $faded-pink;
+	}
+
+	&__name {
+		margin-top: 20px;
+		font-size: 2rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__more {
+		width: 80%;
+		text-align: center;
+		font-size: 1.6rem;
+
+		a {
+			margin: 0 3px;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+
+			&:active,
+			&:visited {
+				color: $main-color;
+			}
+
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__sign {
+		position: relative;
+		margin: 40px;
+		border: none;
+		background: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: bold;
+		text-align: center;
+		font-size: 2rem;
+		color: $main-color;
+		text-decoration: none;
+		@include underline;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:visited {
+			color: $main-color;
+		}
+	}
+
+	&__sign,
+	&__sign::before,
+	&__sign::after {
+		transition: 0.5s;
+	}
+}
+
+@media (width <1000px) {
+	.classes {
+		padding: 20px;
+		height: 60vh;
+		&__all {
+			display: none;
+		}
+	}
+
+	.class {
+		&__sign {
+			margin: 20px 0;
+			font-size: 1.8rem;
+		}
+	}
+}

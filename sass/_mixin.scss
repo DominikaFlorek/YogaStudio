@@ -1,0 +1,48 @@
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin burgerBtn {
+	content: '';
+	position: absolute;
+	right: 0;
+	height: 3px;
+	transition: width 0.3s;
+	background-color: $main-color;
+}
+
+@mixin heading {
+	font-family: 'Great Vibes', cursive;
+	// font-weight: bold;
+	font-size: 3rem;
+}
+
+@mixin headingMobile {
+	font-size: 2.2rem;
+}
+
+@mixin underline {
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		border-bottom: 2px solid $main-color;
+	}
+
+	&::before {
+		right: 50%;
+	}
+
+	&::after {
+		left: 50%;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		width: 50%;
+	}
+}
